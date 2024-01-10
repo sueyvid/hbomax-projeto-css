@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: darkblue;
+}
+
+header {
+    background-color: #0000004d;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 1.5rem;
+    padding-left: 1rem;
+}
+
+#buttons {
+    padding-right: 2rem;
+}
+
+.button-font {
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.button-design1 {
+    background-color: transparent;
+    border: none;
+    padding: 8px 26px;
+}
+
+.button-design2 {
+    background-color: #b535f6;
+    border: none;
+    border-radius: 500px;
+    padding: 8px 26px;
+}
