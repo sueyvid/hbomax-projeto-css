@@ -7,18 +7,118 @@
     <title>HBO Max</title>
 </head>
 <body>
-    <header>
+    <nav>
         <div>
-            <img src="assets/images/hbo-logo.svg" alt="Logo hbomax">
+            <a href="#">
+                <img src="assets/images/hbo-logo.svg" alt="Logo hbomax">
+            </a>
         </div>
-        <nav id="buttons">
-            <button class="button-font button-design1">
+        <div class="buttons">
+            <button class="button-font button-font__small button-design1">
                 entrar
             </button>
-            <button class="button-font button-design2">
+            <button class="button-font button-font__small button-design2">
                 assine agora
             </button>
-        </nav>
+        </div>
+    </nav>
+    <header>
+        <div class="gallery">
+            <img src="assets/images/hbo.png" alt="Logo HBO">
+            <img src="assets/images/dc.png" alt="Logo DC">
+            <img src="assets/images/wb.png" alt="Logo WB">
+            <img src="assets/images/cartoon-network_neutral.png" alt="Logo Cartoon Network">
+            <img src="assets/images/max_originals.png" alt="Logo Max">
+        </div>
+        <div class="title">
+            <h1 class="title__small" class="header-font">curta as melhores histórias</h1>
+            <h2 class="title__big" class="header-font">para todo mundo</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="price">
+            <p class="price__subtitle">Assinaturas a partir de</p>
+            <div class="price__div">
+                <p class="price__value">R$ 14,15</p>
+                <p class="price__small">/mês*</p>
+            </div>
+        </div>
+        <button class="btn__subscription button-font button-font__big">assine agora</button>
+        <p class="subtitle__small">*aplicável ao plano anual com o pagamento antecipado.</p>
     </header>
+    <main>
+        <section>
+            <h2 class="section__title">Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
+            <div class="card">
+                <h3 class="card__title">Mobile</h3>
+                <p class="card__price">R$ 19,90 <span class="card__price-small">/mês</span></p>
+                <ul class="card__list">
+                    <li class="card__list-item">Aproveite em smartphones e tablets, onde quiser.</li>
+                    <li class="card__list-item">Assista em 1 tela por vez.</li>
+                    <li class="card__list-item">Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
+                    <li class="card__list-item">Baixe suas séries e filmes favoritos, assista onde e quando quiser</li>
+                </ul>
+                <button class="card__button button-font__medium button-font">
+                    escolher o plano mobile
+                </button>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Multitelas</h3>
+                <p class="card__price">R$ 27,90 <span class="card__price-small">/mês</span></p>
+                <ul class="card__list">
+                    <li class="card__list-item">Aproveite em todos os seus dispositivos.</li>
+                    <li class="card__list-item">Chromecast e Airplay disponíveis.</li>
+                    <li class="card__list-item">Assista em até 3 telas ao mesmo tempo.</li>
+                    <li class="card__list-item">Tenha conteúdo em alta definição, com qualidade 4K.</li>
+                    <li class="card__list-item">Baixe suas séries e filmes favoritos, assista onde e quando quiser</li>
+                    <li class="card__list-item">Crie até 5 perfis diferentes.</li>
+                </ul>
+                <button class="card__button button-font__medium button-font">
+                    escolher o plano multitelas
+                </button>
+            </div>
+        </section>
+        <section>
+            <h2 class="section__title">Descubra novos universos</h2>
+            <div class="films-gallery">
+                <div class="content__card">
+                    <img class="content__image" src="assets/images/hbo-default_0.webp" alt="banner hbo">
+                </div>
+                <div class="content__card">
+                    <img class="content__image" src="assets/images/MAX-Default.webp" alt="banner max">
+                </div>
+                <div class="content__card">
+                    <img class="content__image" src="assets/images/DC_Default.webp" alt="banner dc">
+                </div>
+                <div class="content__card">
+                    <img class="content__image" src="assets/images/WB-Default.webp" alt="banner wb">
+                </div>
+                <div class="content__card">
+                    <img class="content__image" src="assets/images/CN-Default.webp" alt="banner cn">
+                </div>
+                <div class="content__card">
+                    <img class="content__image" src="assets/images/UCL-Default.webp" alt="banner ucl">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__links">
+            <a class="footer__link links-font" href="#">agora na hbo max</a>
+            <a class="footer__link links-font" href="#">em breve</a>
+            <a class="footer__link links-font" href="#">filme em destaque</a>
+            <a class="footer__link links-font" href="#">séries</a>
+            <a class="footer__link links-font" href="#">ajuda</a>
+        </div>
+        <p class="footer__legal">
+            © 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos
+            reservados. HBO Max é usado sob licença.
+        </p>
+        <div class="footer__social">
+            <img src="assets/images/fb_0.png" alt="facebook logo">
+            <img src="assets/images/twitter_0.png" alt="twitter logo">
+            <img src="assets/images/instagram_0.png" alt="instagram logo">
+            <img src="assets/images/youtube_0.png" alt="youtube logo">
+        </div>
+    </footer>
 </body>
 </html>
