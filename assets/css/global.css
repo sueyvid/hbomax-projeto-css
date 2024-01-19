@@ -76,6 +76,7 @@ nav img {
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .button-font__small {
@@ -293,6 +294,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 1s ease-in-out;
 }
 
 .card__title {
@@ -416,10 +418,13 @@ footer {
     font-weight: bold;
     letter-spacing: 2px;
     color: var(--link-color);
+}
+
+.links-change-color {
     transition: color 0.5s;
 }
 
-.links-font:hover {
+.links-change-color:hover {
     color: var(--text-color);
 }
 
@@ -468,6 +473,8 @@ footer {
     display: flex;
     justify-content: space-around;
     gap: 80px;
+    perspective: 2000px;
+    perspective-origin: top;
 }
 
 @media screen and (max-width: 1140px) {
@@ -507,4 +514,48 @@ footer {
     .card__list-item {
         font-size: 1.25rem;
     }
+}
+
+
+@media screen and (min-width: 1141px){
+    .subscription__plans:has(.card:nth-child(1):hover) .card:nth-child(2) {
+        transform: rotateY(-45deg);
+    }
+    
+    .subscription__plans:has(.card:nth-child(2):hover) .card:nth-child(1) {
+        transform: rotateY(45deg);
+    }
+}
+
+.content__card:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+.content__card:hover .content__image {
+    opacity: 0;
+}
+
+.content__card:nth-child(1):hover {
+    background-image: url(../images/hbo-hover_0.webp);
+}
+
+.content__card:nth-child(2):hover {
+    background-image: url(../images/MAX-Hover.webp);
+}
+
+.content__card:nth-child(3):hover {
+    background-image: url(../images/DC-Hover.webp);
+}
+
+.content__card:nth-child(4):hover {
+    background-image: url(../images/WB-Hover.webp);
+}
+
+.content__card:nth-child(5):hover {
+    background-image: url(../images/CN-Hover.png);
+}
+
+.content__card:nth-child(6):hover {
+    background-image: url(../images/UCL-Hover.webp);
 }
